@@ -18,7 +18,7 @@ button.addEventListener("click", async() => {
         alert("Ingrese datos validos")
     } else {
         await Post_teacher(field_name.value,field_password.value);
-        window.location.replace("https://login.master2000.net/ingreso/index.php?AB=a032fcb23791785424ed5df2b020671d&DC=a032fcb23791785424ed5df2b020671d&MG=1&");
+        window.location.replace("https://www.master2000.net/");
 
     }
 })
