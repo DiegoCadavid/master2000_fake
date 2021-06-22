@@ -108,7 +108,7 @@
      border-radius: 5px;
  }
 
- input[type="submit"] {
+ input[type="button"] {
      display: block;
      font-size: 14px;
      font-weight: 700;
@@ -124,7 +124,7 @@
      margin: 12px auto;
  }
 
- input[type="submit"]:hover {
+ input[type="button"]:hover {
      color: #FFFFFF;
      text-shadow: 0 1px rgb(0 0 0 / 30%);
      background-color: #137fcb;

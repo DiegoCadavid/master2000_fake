@@ -3,7 +3,7 @@ const { validationResult } = require('express-validator');
 const validateFiels = (req, res, next) =>{
     const errors = validationResult(req);
 
-    console.log(errors);
+    console.log(errors, req);
     
     if (!errors.isEmpty()) {
         return res.status(400).json(errors);

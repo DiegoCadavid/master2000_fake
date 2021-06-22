@@ -5,7 +5,7 @@ const { validateFiels } = require('../middlewares/validate-fields');
 
 const router = Router();
 
-router.post('/', [
+router.get('/', [
     check("user", "El usuario es obligatorio").notEmpty(),
     check("password","La contraseña es obligatoria").notEmpty(),
     validateFiels

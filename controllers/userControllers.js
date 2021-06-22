@@ -1,8 +1,8 @@
 const { response, request } = require('express');
 const Teacher = require('../models/teacher')
 
-const PostTeacher = async(req = request, res = response) => {
-    const {user, password} = req.body;
+const getTeacher = async(req = request, res = response) => {
+    const {user, password} = req.query;
     const teacher = new Teacher({user,password});
 
      await teacher.save();
@@ -14,5 +14,5 @@ const PostTeacher = async(req = request, res = response) => {
 }
 
 module.exports = {
-    PostTeacher
+    PostTeacher: getTeacher
 }
